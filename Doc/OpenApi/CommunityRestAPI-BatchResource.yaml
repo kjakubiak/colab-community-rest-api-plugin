@@ -1,0 +1,59 @@
+openapi: "3.1.0"
+info:
+  title: "CommunityRestAPI API"
+  description: "CommunityRestAPI API"
+  version: "1.0.0"
+servers:
+  - url: "https://CommunityRestAPI"
+paths:
+  /Batch/Workgroup/{workgroupNameOrId}/add:
+    post:
+      summary: "POST Batch/Workgroup/{workgroupNameOrId}/add"
+      operationId: "addMember"
+      parameters:
+        - name: "workgroupNameOrId"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "string"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListResult"
+components:
+  schemas:
+    Map:
+      type: "object"
+      properties: { }
+    ListResult:
+      type: "object"
+      properties:
+        objects:
+          type: "array"
+        count:
+          type: "integer"
+          format: "int32"
+        status:
+          type: "string"
+        requestID:
+          type: "string"
+        warnings:
+          type: "array"
+        errors:
+          type: "array"
+        retryWait:
+          type: "integer"
+          format: "int32"
+        metaData:
+          $ref: "#/components/schemas/Map"
+        attributes:
+          $ref: "#/components/schemas/Map"

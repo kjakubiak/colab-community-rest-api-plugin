@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+  <SPRight displayName="Community REST API Counter Resource Access" name="communityRestCounterResource"/>
+  <SPRight displayName="Community REST API Role Resource Access" name="communityRestRoleResource"/>
+  <SPRight displayName="Community REST API Batch Resource Access" name="communityRestBatchResource"/>
+  <SPRight displayName="Community REST API Operation Resource Access" name="communityRestOperationResource"/>
+</sailpoint>

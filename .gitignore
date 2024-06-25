@@ -13,7 +13,6 @@ lib/excluded/*.jar
 .sts4-cache
 bin/
 !**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
